@@ -125,7 +125,7 @@ jobs:
           fetch-depth: 1
           path: go/src/oamdev/cluster-gateway
       - name: setup helm
-        uses: azure/setup-helm@v1
+        uses: azure/setup-helm@v4.3.0
       - name: chart package
         run: |
           if [ ! -d release ]; then
